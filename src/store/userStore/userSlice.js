@@ -1,0 +1,23 @@
+export const createUserSlice = (set, get) => ({
+    loaded:false,
+    crackers:[],
+    settings:{},
+    setProducts:(products)=>{
+        set((state)=>({
+            ...state,
+            crackers:products
+        }))
+    },
+    setSettings:(settings)=>{
+        set((state)=>({
+            ...state,
+            settings:settings
+        }))
+    },
+    setLoaded:(value)=>{
+        set((state)=>({
+            ...state,
+            loaded:value
+        }))
+    }
+})

@@ -1,0 +1,8 @@
+# Redirect all HTTP traffic to HTTPS
+http://* https://:splat 301!
+
+# Redirect www to non-www (optional, since you set mickeycrackers.com as primary)
+https://www.mickeycrackers.com/* https://mickeycrackers.com/:splat 301!
+
+# SPA fallback (keep this at the bottom)
+ /*    /index.html    200
