@@ -124,7 +124,7 @@ export default function ContactUs() {
                                 "openingHours": "Mo-Su 09:00-20:00",
                                 "priceRange": "₹₹",
                                 "sameAs": [
-                                    "https://www.instagram.com/mickey_crackers"
+                                    "https://www.instagram.com/mickey_crackers_"
                                 ]
                             })
                         }} />

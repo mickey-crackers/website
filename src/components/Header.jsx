@@ -56,7 +56,7 @@ export default function Header() {
                                 +91-9025399060
                             </a>
                         </div>
-                        <a href="https://www.instagram.com/mickey_crackers/" className="text-gray-400 hover:text-[#D4AF37] transition" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.instagram.com/mickey_crackers_/" className="text-gray-400 hover:text-[#D4AF37] transition" target="_blank" rel="noopener noreferrer">
                             <RiInstagramLine className='text-xl' />
                         </a>
                         <a href="https://wa.me/+919025399060" className="text-gray-400 hover:text-green-500 transition" target="_blank" rel="noopener noreferrer">
@@ -84,12 +84,11 @@ export default function Header() {
                         {/* Left group: Logo (collapsible) + Nav Links */}
                         <div className='flex items-center' >
                             {/* Small Logo with sliding transition */}
-                            <div 
-                                className={`flex items-center cursor-pointer transition-all duration-500 ease-in-out overflow-hidden ${
-                                    (isScrolled || !showTopBar) 
-                                        ? 'w-16 md:w-20 opacity-100 mr-4 md:mr-6' 
-                                        : 'w-0 opacity-0 mr-0'
-                                }`}
+                            <div
+                                className={`flex items-center cursor-pointer transition-all duration-500 ease-in-out overflow-hidden ${(isScrolled || !showTopBar)
+                                    ? 'w-16 md:w-20 opacity-100 mr-4 md:mr-6'
+                                    : 'w-0 opacity-0 mr-0'
+                                    }`}
                                 onClick={() => { router.push('/') }}
                             >
                                 <img className='w-16 md:w-20 object-cover min-w-[64px] md:min-w-[80px]' src={Logo.src || Logo} alt='mickey crackers sivakasi' />
@@ -115,12 +114,11 @@ export default function Header() {
                         {/* Right group: Action Button + Cart + Hamburger */}
                         <div className='flex items-center gap-3 md:gap-4' >
                             {/* Minimal action button shown when scrolled with slide-in transition */}
-                            <div 
-                                className={`transition-all duration-500 ease-in-out overflow-hidden flex items-center ${
-                                    (isScrolled && showTopBar)
-                                        ? 'max-w-[150px] opacity-100 mr-1 md:mr-2' 
-                                        : 'max-w-0 opacity-0 mr-0'
-                                }`}
+                            <div
+                                className={`transition-all duration-500 ease-in-out overflow-hidden flex items-center ${(isScrolled && showTopBar)
+                                    ? 'max-w-[150px] opacity-100 mr-1 md:mr-2'
+                                    : 'max-w-0 opacity-0 mr-0'
+                                    }`}
                             >
                                 <button className='h-fit text-black font-semibold rounded bg-gradient-to-r from-amber-500 to-[#D4AF37] hover:brightness-110 py-1.5 px-3 md:px-4 text-[10px] md:text-xs tracking-wider cursor-pointer whitespace-nowrap' onClick={() => {
                                     router.push('/quick-purchase')
