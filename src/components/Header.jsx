@@ -69,9 +69,9 @@ export default function Header() {
                         <img className='absolute left-28 w-16 block' src={rocket.src || rocket} alt='gold fireworks animation rocket' />
                     </div>
                     <div className='flex items-center gap-4' >
-                        <a href="/mickey-crackers-price-list.pdf" className="text-[#D4AF37]" target='_blank' download>
+                        {/* <a href="/mickey-crackers-price-list.pdf" className="text-[#D4AF37]" target='_blank' download>
                             <span className='h-fit text-black font-semibold rounded bg-gradient-to-r from-[#D4AF37] to-[#AA7C11] hover:brightness-110 py-2 px-3 text-xs tracking-wider transition-all duration-300' >Download Price List</span>
-                        </a>
+                        </a> */}
                         <button className='h-fit text-black font-semibold rounded bg-gradient-to-r from-amber-500 to-[#D4AF37] hover:brightness-110 py-2 px-4 text-xs tracking-wider cursor-pointer transition-all duration-300' onClick={() => {
                             router.push('/quick-purchase')
                         }} >Order Now</button>
